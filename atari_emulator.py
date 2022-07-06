@@ -1,7 +1,7 @@
 import numpy as np
 from ale_py import ALEInterface
-from PIL import Image
-numpy.array(Image.fromarray(arr).resize())
+import imageio
+imageio.imread()
 import random
 from environment import BaseEnvironment, FramePool,ObservationPool
 
