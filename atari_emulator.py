@@ -1,7 +1,6 @@
 import numpy as np
 from ale_py import ALEInterface
 import imageio
-imageio.imread(uri)
 import random
 from environment import BaseEnvironment, FramePool,ObservationPool
 
