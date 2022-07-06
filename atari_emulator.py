@@ -1,5 +1,5 @@
 import numpy as np
-from ale-py import ALEInterface
+from ale_py import ALEInterface
 from scipy.misc import imresize
 import random
 from environment import BaseEnvironment, FramePool,ObservationPool
