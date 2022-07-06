@@ -7,7 +7,7 @@ class EnvironmentCreator(object):
         """
 
         from atari_emulator import AtariEmulator
-        from ale_python_interface import ALEInterface
+        from ale_py import ALEInterface
         filename = args.rom_path + "/" + args.game + ".bin"
         ale_int = ALEInterface()
         ale_int.loadROM(str.encode(filename))
