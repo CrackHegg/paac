@@ -1,6 +1,8 @@
 import numpy as np
 from multiprocessing import Process
 import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior() 
 import logging
 from logger_utils import variable_summaries
 import os
