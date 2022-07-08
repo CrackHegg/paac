@@ -48,7 +48,7 @@ class AtariEmulator(BaseEnvironment):
         Get the current frame luminance
         :return: the current frame
         """
-        self.ale.getScreenGrayscale(self.gray_screen, self.gray_screen)
+        self.ale.getScreenGrayscale(self.gray_screen)
         if self.call_on_new_frame:
             self.ale.getScreenRGB(self.rgb_screen)
             self.on_new_frame(self.rgb_screen)
