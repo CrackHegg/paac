@@ -1,6 +1,6 @@
 import numpy as np
 from ale_py import ALEInterface
-from scipy.misc import imresize
+import cv2
 import random
 from environment import BaseEnvironment, FramePool,ObservationPool
 
@@ -70,7 +70,7 @@ class AtariEmulator(BaseEnvironment):
         """ Preprocess frame pool """
         
         img = np.amax(frame_pool, axis=0)
-        img = imresize(img, (84, 84), interp='nearest')
+        img = cv2.resize(img, (84, 84), interp='nearest')
         img = img.astype(np.uint8)
         return img
 
