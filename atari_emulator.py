@@ -1,6 +1,6 @@
 import numpy as np
 from ale_py import ALEInterface
-import imageio
+from scipy.misc import imresize
 import random
 from environment import BaseEnvironment, FramePool,ObservationPool
 
