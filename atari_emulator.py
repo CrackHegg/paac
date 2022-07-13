@@ -1,6 +1,6 @@
 import numpy as np
 from ale_py import ALEInterface
-from scipy.misc import imresize
+import cv2
 import random
 from environment import BaseEnvironment, FramePool,ObservationPool
 
